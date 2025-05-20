@@ -1,0 +1,109 @@
+\documentclass[a4paper,12pt]{article}
+
+% --- Pakete ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{ Lernzettel}
+\lhead{}
+\rfoot{Seite \thepage}
+\setlength{\headheight}{14.49998pt}
+\addtolength{\topmargin}{-2.49998pt}
+
+% --- Farben & Design ---
+\definecolor{myblue}{RGB}{0,102,204}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=myblue,
+    urlcolor=myblue
+}
+
+% --- Box für Definitionen ---
+\newtcolorbox{definitionbox}{
+  colback=blue!5!white,
+  colframe=blue!75!black,
+  title=Definition
+}
+
+% --- Absatzformatierung ---
+\setlength{\parskip}{0.3em}
+\setlength{\parindent}{0pt}
+
+% --- Dokumentinformationen ---
+\title{Lernzettel -- [Fach oder Thema]}
+\author{Name des Autors}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Thema 1: ...}
+
+\begin{definitionbox}
+...
+\end{definitionbox}
+
+Wichtige Begriffe:
+\begin{itemize}[leftmargin=*]
+  \item 1
+  \item 2
+  \item 3
+\end{itemize}
+
+
+
+\section{Thema 2: ...}
+
+\begin{definitionbox}
+...
+\end{definitionbox}
+
+
+\begin{itemize}[leftmargin=*]
+  \item 1
+  \item 2
+  \item 3
+\end{itemize}
+
+\section{Thema 3: ...}
+
+\begin{definitionbox}
+  ...
+\end{definitionbox}  
+\begin{itemize}[leftmargin=*]
+  \item 1
+  \item 2
+  \item 3
+\end{itemize}
+
+
+\begin{tcolorbox}[title=Beispiel, colback=blue!5!white, colframe=blue!75!black]
+  ...
+\end{tcolorbox}
+  
+\begin{tcolorbox}[title=Beispiel, colframe=red!75!black] 
+     \begin{itemize}
+    \item 1
+    \item 2
+    \item 3
+    \item 4
+     \end{itemize}      
+\end{tcolorbox}
+\end{document}
